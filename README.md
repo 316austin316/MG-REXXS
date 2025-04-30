@@ -1,11 +1,16 @@
 # MG-REXXS
-A simple GUI tool for encrypting and decrypting `.xxs` video files from the Metal Gear Solid Mas
+A simple GUI tool for encrypting and decrypting `.xxs` video files from the Metal Gear Solid Master Collection.
+
+
 
 
 ## Features
 
 * **Decrypt:** Converts `.xxs` files into a standard format (defaults to `.mp4`).
 * **Encrypt:** Converts standard files (e.g., `.mp4`) back into the game's `.xxs` format.
+
+
+![xxs tool](https://github.com/user-attachments/assets/25a8dde2-d44c-480d-aa27-c405e5e21ce2)
 
 
 ## How to Use
