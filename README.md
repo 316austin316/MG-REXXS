@@ -28,3 +28,6 @@ The tool uses the algorithm identified by user `eol`. It generates a unique pseu
 
 * **Original `.xxs` Algorithm/Script:** eol
 * **GUI Code:** 316austin316
+
+## Known Bugs:
+Apparently in the original script, there was a comment: "FURTHER WORK IS REQUIRED FOR FILE SIZE NOT A MULTIPLE OF 4" so perhaps this is still an issue, more tests need to be done!
