@@ -56,7 +56,7 @@ class MersenneTwister:
 def gen_seed(file_path):
     # Use the version that splits at the first dot, likely closer to eol code
     filename = os.path.basename(file_path)
-    name_lower = filename.lower()
+    name_lower = filename
     name_base = name_lower.split('.', 1)[0]
     # Fallback if split didn't find a dot (shouldn't happen with .xxs/.mp4 but safe)
     if not name_base:
