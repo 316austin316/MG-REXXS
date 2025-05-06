@@ -325,6 +325,25 @@ Version: 1.0
         if not in_path or not out_path:
             messagebox.showwarning("Missing Info", "Please select an input file first.")
             return
+            
+        is_encrypting = out_path.lower().endswith(".xxs")
+        if is_encrypting:
+            output_basename = os.path.basename(out_path)
+            warning_message = (
+                "--- CALL: PUSH SELECT ---\n\n"
+                "You are about to encrypt to an `.xxs` file.\n\n"
+                f"IMPORTANT: The encryption key is *directly tied* to the output filename: '{output_basename}'\n\n"
+                "This filename MUST EXACTLY match the one the game expects for this video.\n"
+                "Using a different name will result in a key mismatch and likely failure to play.\n\n"
+                "Do you want to proceed with encryption using this output name?"
+            )
+            # Ask for confirmation before starting
+            proceed = messagebox.askyesno("Encryption Filename Confirmation", warning_message)
+        
+            if not proceed:
+                self.status_text.set("Encryption cancelled by user.")
+                return  # Stop here if user clicks No
+
 
         # Disable buttons during processing
         self.btn_browse.config(state='disabled')
