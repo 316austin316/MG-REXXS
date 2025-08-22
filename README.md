@@ -11,7 +11,8 @@ A simple GUI tool for encrypting and decrypting `.xxs` video files from the Meta
 * **Video Viewer:** Built-in video player that automatically loads MP4 files after conversion.
 
 
-![xxs tool](https://github.com/user-attachments/assets/25a8dde2-d44c-480d-aa27-c405e5e21ce2)
+![xxs tool](<img width="701" height="548" alt="image" src="https://github.com/user-attachments/assets/938a5d8b-2f19-4d60-8ccf-898a88aff6e4" />
+)
 
 
 ## How to Use
